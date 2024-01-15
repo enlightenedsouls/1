@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .widget {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="widget">
+    <button onclick="showPage(1)">For Pastors</button>
+    <button onclick="showPage(2)">For Women</button>
+    <button onclick="showPage(3)">For Everyone</button>
+    <button onclick="showPage(4)">For Leaders</button>
+    <button onclick="showPage(5)">For Churches</button>
+    <button onclick="showPage(6)">For Mental Health Workers</button>
+
+    <div id="page1" class="hidden">
+        <h3>Services for Pastors</h3>
+        <p>Our Pastoral Burnout Coaching offers pastors a sanctuary to address the weight of their responsibilities and emotional exhaustion. Through our services, pastors can rebalance their well-being and reignite their passion, finding strength and clarity in their sacred calling.</p>
+    </div>
+    <div id="page2" class="hidden">
+        <h3>Empower HER</h3>
+        <p>Empower HER is dedicated to women facing the aftermath of trauma, grief, or feeling marginalized. This program guides women through reclaiming their identity, self-esteem, and voice, empowering them to rebuild their lives with strength and worth.</p>
+    </div>
+    <div id="page3" class="hidden">
+        <h3>Enlightened Seeking Souls & Enlightened Through Trauma</h3>
+        <p>Our program offers holistic burnout coaching, integrating spiritual nourishment with evidence-based practices. It's a lifeline for those feeling lost and overwhelmed, providing a path towards rediscovering purpose and peace. Additionally, we guide individuals through the intense journey of trauma recovery, offering support and strategies for healing and reclaiming joy in life.</p>
+    </div>
+    <div id="page4" class="hidden">
+        <h3>Services for Leaders</h3>
+        <p>This coaching program is tailored for leaders in church or other domains, focusing on balancing their responsibilities with mental well-being. It equips leaders with tools and strategies for ethical leadership and self-care, fostering resilience and a healthier leadership experience.</p>
+    </div>
+    <div id="page5" class="hidden">
+        <h3>Services for Churches</h3> <p>Our consulting service for churches focuses on program evaluation and strategic guidance. We assist churches in navigating the complexities of their programs, ensuring they align with their mission and effectively serve the community. By evaluating and optimizing church programs, we help to rejuvenate the congregation's spiritual journey and enhance the church's impact in fulfilling its sacred calling.</p> </div> <div id="page6" class="hidden"> <h3>Enlightened Souls for Mental Health Workers</h3> <p>Enlightened Souls elevates counseling careers with expert supervision tailored to various fields. Our program offers a blend of one-on-one mentorship and group collaboration, focusing on compliance and professional growth for a transformative career experience in counseling.</p> </div>
+</div> <script> function showPage(pageNumber) { var pages = document.querySelectorAll('.widget div'); for (var i = 0; i < pages.length; i++) { pages[i].style.display = 'none'; } document.getElementById('page' + pageNumber).style.display = 'block'; } </script> </body> </html>
